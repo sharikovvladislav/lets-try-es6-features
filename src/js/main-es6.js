@@ -6,7 +6,8 @@ for (let i of array) {
 document.addEventListener("DOMContentLoaded", function () {
   var buttons = document.getElementsByTagName('button');
   for (let i = 0; i < buttons.length; i++) {
-    buttons[i].onclick = function () {
+    buttons[i].innerHTML = i;
+    buttons[i].onclick = () => {
       console.log(i);
     }
   }
